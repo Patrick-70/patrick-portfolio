@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patrick Nyamekye | Portfolio</title>
+  
+  <!-- W3.CSS Framework -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  
+  <!-- Google Fonts & Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR (TOP) -->
+  <div class="w3-top">
+    <div class="w3-bar custom-navbar w3-card" id="myNavbar">
+      <a href="#home" class="w3-bar-item w3-button w3-wide brand-title">PATRICK NYAMEKYE</a>
+      
+      <!-- Right-aligned links (Desktop) -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> ABOUT</a>
+        <a href="#skills" class="w3-bar-item w3-button"><i class="fa fa-code"></i> SKILLS</a>
+        <a href="#education" class="w3-bar-item w3-button"><i class="fa fa-graduation-cap"></i> EDUCATION</a>
+        <a href="#achievements" class="w3-bar-item w3-button"><i class="fa fa-award"></i> ACHIEVEMENTS</a>
+        <a href="#projects" class="w3-bar-item w3-button"><i class="fa fa-folder"></i> PROJECTS</a>
+        <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+      </div>
+
+      <!-- Mobile hamburger toggle button -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" id="navToggle">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- MOBILE SIDEBAR -->
+  <nav class="w3-sidebar w3-bar-block w3-hide-medium w3-hide-large mobile-sidebar" id="mySidebar">
+    <a href="javascript:void(0)" id="navClose" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" class="w3-bar-item w3-button mobile-nav-item">ABOUT</a>
+    <a href="#skills" class="w3-bar-item w3-button mobile-nav-item">SKILLS</a>
+    <a href="#education" class="w3-bar-item w3-button mobile-nav-item">EDUCATION</a>
+    <a href="#achievements" class="w3-bar-item w3-button mobile-nav-item">ACHIEVEMENTS</a>
+    <a href="#projects" class="w3-bar-item w3-button mobile-nav-item">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button mobile-nav-item">CONTACT</a>
+  </nav>
+
+  <!-- HERO HEADER SECTION -->
+  <header class="hero-header w3-container" id="home">
+    <div class="hero-content w3-center">
+      <div class="profile-frame">
+        <img src="images/profile.jpg" alt="Patrick Nyamekye" class="hero-avatar floating-avatar" onerror="this.src='https://ui-avatars.com/api/?name=Patrick+Nyamekye&background=22c55e&color=fff&size=180'" />
+      </div>
+      <h1 class="w3-jumbo hero-title">Patrick Nyamekye</h1>
+      <p class="hero-subtitle">IT Student | Developer | Cybersecurity Enthusiast</p>
+      <p class="hero-desc">Building solutions through technology, software development, and modern innovation.</p>
+      
+      <div class="w3-padding-16">
+        <a href="#projects" class="w3-button btn-custom-primary w3-round-large w3-margin-right">
+          <i class="fa-solid fa-rocket"></i> View Projects
+        </a>
+        <a href="Patrick-Nyamekye-CV.pdf" download class="w3-button btn-custom-dark w3-round-large w3-margin-right">
+          <i class="fa fa-download"></i> Download CV
+        </a>
+        <a href="https://github.com/Patrick-70" target="_blank" class="w3-button btn-custom-outline w3-round-large">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTAINER -->
+  <div class="w3-content main-container">
+
+    <!-- ABOUT SECTION -->
+    <section class="w3-container w3-padding-64" id="about">
+      <div class="glass-card">
+        <h2 class="w3-center section-title">About Me</h2>
+        <p class="w3-center w3-large section-sub">University of Cape Coast — Level 300</p>
+        <div class="w3-row-padding w3-center w3-margin-top">
+          <p class="about-text">
+            I am a Level 300 Information Technology student at the <strong>University of Cape Coast</strong>. 
+            I am passionate about software development, networking, cybersecurity, and building practical technology solutions that make an impact.
+          </p>
+        </div>
+        
+        <!-- STATS COUNTERS -->
+        <div class="w3-row w3-center w3-margin-top stats-row">
+          <div class="w3-third w3-section">
+            <span class="w3-xlarge stat-num">300</span><br>Academic Level
+          </div>
+          <div class="w3-third w3-section">
+            <span class="w3-xlarge stat-num">3+</span><br>Core Projects
+          </div>
+          <div class="w3-third w3-section">
+            <span class="w3-xlarge stat-num">100%</span><br>Dedication
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="w3-container w3-padding-64" id="skills">
+      <div class="glass-card">
+        <h2 class="w3-center section-title">Our Skills</h2>
+        <p class="w3-center section-sub">Technical Competencies & Expertise</p>
+        
+        <div class="skills-container w3-margin-top">
+          <p class="w3-wide"><i class="fab fa-html5"></i> HTML</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-bar progress-fill" data-progress="85%">85%</div>
+          </div>
+
+          <p class="w3-wide"><i class="fab fa-css3-alt"></i> CSS</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-bar progress-fill" data-progress="80%">80%</div>
+          </div>
+
+          <p class="w3-wide"><i class="fab fa-js"></i> JavaScript</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-bar progress-fill" data-progress="60%">60%</div>
+          </div>
+
+          <p class="w3-wide"><i class="fa-solid fa-network-wired"></i> Networking</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="skill-bar progress-fill" data-progress="70%">70%</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="w3-container w3-padding-64" id="education">
+      <div class="glass-card">
+        <h2 class="w3-center section-title">Education</h2>
+        <p class="w3-center section-sub">BSc Information Technology</p>
+        
+        <div class="w3-row w3-margin-top">
+          <div class="w3-col m3 w3-center">
+            <div class="edu-icon-wrapper">
+              <i class="fa-solid fa-building-columns fa-3x"></i>
+            </div>
+          </div>
+          <div class="w3-col m9">
+            <h3>University of Cape Coast</h3>
+            <p><strong>Status:</strong> Level 300 Undergraduate Student</p>
+            <p><strong>Relevant Courses:</strong></p>
+            <div class="tags-flex">
+              <span class="custom-tag">Network Computing I</span>
+              <span class="custom-tag">Software Engineering</span>
+              <span class="custom-tag">Information System Management</span>
+              <span class="custom-tag">Web Technology II</span>
+              <span class="custom-tag">Discrete Mathematics</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACHIEVEMENTS SECTION -->
+    <section class="w3-container w3-padding-64" id="achievements">
+      <h2 class="w3-center section-title">Certificates & Achievements</h2>
+      <p class="w3-center section-sub">Key focus areas and domain expertise</p>
+      
+      <div class="w3-row-padding w3-margin-top">
+        <div class="w3-third w3-margin-bottom">
+          <div class="glass-card feature-card w3-center">
+            <div class="feature-icon"><i class="fa fa-code fa-2x"></i></div>
+            <h3>Web Development</h3>
+            <p>Experience building responsive websites using HTML, CSS, JavaScript, and modern web frameworks.</p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="glass-card feature-card w3-center">
+            <div class="feature-icon"><i class="fa fa-laptop-code fa-2x"></i></div>
+            <h3>Software Projects</h3>
+            <p>Developed practical applications including queue systems and full-stack management platforms.</p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <div class="glass-card feature-card w3-center">
+            <div class="feature-icon"><i class="fa fa-network-wired fa-2x"></i></div>
+            <h3>Networking</h3>
+            <p>Strong foundation in computer networks, structural troubleshooting, and communication protocols.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="w3-container w3-padding-64" id="projects">
+      <h2 class="w3-center section-title">My Projects</h2>
+      <p class="w3-center section-sub">What we've built so far</p>
+
+      <div class="w3-row-padding w3-margin-top">
+        
+        <!-- FoodFlow -->
+        <div class="w3-third w3-margin-bottom">
+          <div class="glass-card project-card">
+            <div class="img-container">
+              <img src="images/foodflow.png" alt="FoodFlow" class="project-thumb" onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80'" />
+            </div>
+            <div class="project-info">
+              <h3>FoodFlow</h3>
+              <p>Food ordering queue management system built using HTML, CSS, and JavaScript.</p>
+              <div class="w3-padding-8">
+                <a href="https://foodflow101.netlify.app/" target="_blank" class="w3-button btn-custom-primary w3-small w3-round">Live Demo</a>
+                <a href="https://github.com/Patrick-70/foodflow" target="_blank" class="w3-button btn-custom-dark w3-small w3-round">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Browser History Manager -->
+        <div class="w3-third w3-margin-bottom">
+          <div class="glass-card project-card">
+            <div class="img-container">
+              <img src="images/browser.png" alt="Browser History Manager" class="project-thumb" onerror="this.src='https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80'" />
+            </div>
+            <div class="project-info">
+              <h3>Browser History Manager</h3>
+              <p>A stack-based application for managing browser navigation history interactively.</p>
+              <div class="w3-padding-8">
+                <a href="https://browsinghistorymanage.netlify.app/" target="_blank" class="w3-button btn-custom-primary w3-small w3-round">Live Demo</a>
+                <a href="https://github.com/Patrick-70/browserhistorymanagement" target="_blank" class="w3-button btn-custom-dark w3-small w3-round">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Nova -->
+        <div class="w3-third w3-margin-bottom">
+          <div class="glass-card project-card">
+            <div class="img-container">
+              <img src="images/nova.png" alt="Project Nova" class="project-thumb" onerror="this.src='https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80'" />
+            </div>
+            <div class="project-info">
+              <h3>Project Nova</h3>
+              <p>A full-stack project management platform equipped with secure authentication.</p>
+              <div class="w3-padding-8">
+                <a href="#" class="w3-button btn-custom-primary w3-small w3-round">Preview</a>
+                <a href="https://github.com/Patrick-70/Quecy-projectNova" target="_blank" class="w3-button btn-custom-dark w3-small w3-round">GitHub</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="w3-container w3-padding-64" id="contact">
+      <div class="glass-card contact-container">
+        <h2 class="w3-center section-title">Contact</h2>
+        <p class="w3-center section-sub">Let's get in touch. Send us a message:</p>
+        
+        <form id="contactForm" class="w3-container w3-margin-top">
+          <p><input class="w3-input w3-border custom-input" type="text" placeholder="Your Name" required></p>
+          <p><input class="w3-input w3-border custom-input" type="email" placeholder="Your Email" required></p>
+          <p><textarea class="w3-input w3-border custom-input" rows="5" placeholder="Message" required></textarea></p>
+          <button type="submit" class="w3-button btn-custom-primary w3-block w3-round-large">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </form>
+        <div id="formSuccess" class="form-success-msg hidden w3-center w3-margin-top">
+          <i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent successfully.
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="w3-center custom-footer w3-padding-32">
+    <a href="#home" class="w3-button btn-custom-primary w3-round-large"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section social-icons">
+      <a href="https://github.com/Patrick-70" target="_blank"><i class="fab fa-github w3-hover-opacity"></i></a>
+      <a href="#"><i class="fab fa-linkedin w3-hover-opacity"></i></a>
+      <a href="mailto:contact@example.com"><i class="fa fa-envelope w3-hover-opacity"></i></a>
+    </div>
+    <p>© 2026 Patrick Nyamekye. All rights reserved.</p>
+  </footer>
+
+  <!-- External JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

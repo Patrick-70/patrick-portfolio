@@ -1,0 +1,306 @@
+/* =========================================================
+   COLOR CHANGING BACKGROUND ANIMATION & CUSTOM ROOT
+========================================================= */
+:root {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --glass: rgba(255, 255, 255, 0.78);
+  --primary: #22c55e;
+  --primary-light: #86efac;
+  --secondary: #4ade80;
+  --blue: #3b82f6;
+  --orange: #f59e0b;
+  --purple: #8b5cf6;
+  --red: #ef4444;
+  --text: #0f172a;
+  --muted: #64748b;
+  --border: #e2e8f0;
+
+  --shadow-sm: 0 4px 10px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
+
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 18px;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+
+  /* Multi-color gradient sequence */
+  background: linear-gradient(
+    135deg,
+    #f8fafc 0%,
+    #dcfce7 25%,
+    /* Nova Soft Green */ #dbeafe 50%,
+    /* Nova Soft Blue */ #fef3c7 75%,
+    /* Nova Soft Amber/Orange */ #f8fafc 100%
+  );
+
+  /* Expand size so it can animate back and forth smoothly */
+  background-size: 400% 400%;
+
+  /* 16-second infinite color cycle */
+  animation: colorChange 16s ease-in-out infinite;
+}
+
+@keyframes colorChange {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* =========================================================
+   CUSTOM NAVBAR & SIDEBAR
+========================================================= */
+.custom-navbar {
+  background-color: var(--surface);
+  color: var(--text);
+  border-bottom: 1px solid var(--border);
+}
+
+.brand-title {
+  font-weight: 700;
+  color: var(--primary) !important;
+}
+
+.mobile-sidebar {
+  background-color: var(--surface) !important;
+  display: none;
+}
+
+.mobile-nav-item {
+  color: var(--text) !important;
+  font-weight: 500;
+}
+
+/* =========================================================
+   HERO HEADER
+========================================================= */
+.hero-header {
+  padding: 120px 16px 64px;
+}
+
+.hero-avatar {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+  box-shadow: var(--shadow-md);
+}
+
+.floating-avatar {
+  animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.hero-title {
+  font-weight: 800;
+  color: var(--text);
+  margin: 1rem 0 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.hero-desc {
+  color: var(--muted);
+  font-size: 1rem;
+  max-width: 600px;
+  margin: 0.5rem auto 1.5rem;
+}
+
+/* =========================================================
+   GLASS CARDS & CONTAINERS
+========================================================= */
+.main-container {
+  max-width: 1100px;
+}
+
+.glass-card {
+  background: var(--glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  box-shadow: var(--shadow-md);
+}
+
+.section-title {
+  font-weight: 700;
+  color: var(--text);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-sub {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+/* =========================================================
+   STATS & SKILLS
+========================================================= */
+.stat-num {
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.skill-bar {
+  background-color: var(--primary);
+  color: #fff !important;
+  text-align: center;
+  border-radius: 20px;
+  height: 24px;
+  line-height: 24px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 0%;
+  transition: width 1.2s cubic-bezier(0.1, 0.5, 0.5, 1);
+}
+
+/* =========================================================
+   EDUCATION & ACHIEVEMENTS
+========================================================= */
+.edu-icon-wrapper {
+  color: var(--primary);
+  padding: 1rem;
+}
+
+.tags-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.custom-tag {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.8rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+}
+
+.feature-card {
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+/* =========================================================
+   PROJECT CARDS
+========================================================= */
+.project-card {
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+}
+
+.img-container {
+  height: 180px;
+  overflow: hidden;
+}
+
+.project-thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 1.5rem;
+}
+
+/* =========================================================
+   FORM & BUTTONS
+========================================================= */
+.custom-input {
+  border-radius: var(--radius-sm) !important;
+  background: var(--surface) !important;
+}
+
+.btn-custom-primary {
+  background-color: var(--primary) !important;
+  color: #fff !important;
+}
+
+.btn-custom-primary:hover {
+  background-color: #16a34a !important;
+}
+
+.btn-custom-dark {
+  background-color: var(--text) !important;
+  color: #fff !important;
+}
+
+.btn-custom-outline {
+  background-color: var(--surface) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+}
+
+.form-success-msg {
+  padding: 0.8rem;
+  background: rgba(34, 197, 94, 0.15);
+  border: 1px solid var(--primary);
+  border-radius: var(--radius-sm);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+.custom-footer {
+  background-color: var(--surface);
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+
+.social-icons a {
+  color: var(--muted);
+  margin: 0 8px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: var(--primary);
+}
